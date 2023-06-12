@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CD23FB52A3710DB006ECBFC /* SwiftUiBiometricApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FB42A3710DB006ECBFC /* SwiftUiBiometricApp.swift */; };
+		3CD23FB72A3710DB006ECBFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FB62A3710DB006ECBFC /* ContentView.swift */; };
+		3CD23FB92A3710E1006ECBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD23FB82A3710E1006ECBFC /* Assets.xcassets */; };
+		3CD23FBC2A3710E1006ECBFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD23FBB2A3710E1006ECBFC /* Preview Assets.xcassets */; };
+		3CD23FC62A3710E1006ECBFC /* SwiftUiBiometricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FC52A3710E1006ECBFC /* SwiftUiBiometricTests.swift */; };
+		3CD23FD02A3710E1006ECBFC /* SwiftUiBiometricUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FCF2A3710E1006ECBFC /* SwiftUiBiometricUITests.swift */; };
+		3CD23FD22A3710E1006ECBFC /* SwiftUiBiometricUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FD12A3710E1006ECBFC /* SwiftUiBiometricUITestsLaunchTests.swift */; };
+		3CD23FE02A371C02006ECBFC /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD23FDF2A371C02006ECBFC /* SwiftKeychainWrapper */; };
+		3CD23FE22A371C3F006ECBFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FE12A371C3F006ECBFC /* LoginView.swift */; };
+		3CD23FE82A371CF8006ECBFC /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FE52A371CF8006ECBFC /* UIApplication+Extension.swift */; };
+		3CD23FE92A371CF8006ECBFC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FE62A371CF8006ECBFC /* APIService.swift */; };
+		3CD23FEA2A371CF8006ECBFC /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FE72A371CF8006ECBFC /* KeychainStorage.swift */; };
+		3CD23FED2A371D0D006ECBFC /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FEC2A371D0D006ECBFC /* Credentials.swift */; };
+		3CD23FEF2A371D24006ECBFC /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FEE2A371D24006ECBFC /* Authentication.swift */; };
+		3CD23FF22A371D40006ECBFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD23FF12A371D40006ECBFC /* LoginViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CD23FC22A3710E1006ECBFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD23FA92A3710DB006ECBFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD23FB02A3710DB006ECBFC;
+			remoteInfo = SwiftUiBiometric;
+		};
+		3CD23FCC2A3710E1006ECBFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD23FA92A3710DB006ECBFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD23FB02A3710DB006ECBFC;
+			remoteInfo = SwiftUiBiometric;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CD23FB12A3710DB006ECBFC /* SwiftUiBiometric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiBiometric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD23FB42A3710DB006ECBFC /* SwiftUiBiometricApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBiometricApp.swift; sourceTree = "<group>"; };
+		3CD23FB62A3710DB006ECBFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CD23FB82A3710E1006ECBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CD23FBB2A3710E1006ECBFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CD23FC12A3710E1006ECBFC /* SwiftUiBiometricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUiBiometricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD23FC52A3710E1006ECBFC /* SwiftUiBiometricTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBiometricTests.swift; sourceTree = "<group>"; };
+		3CD23FCB2A3710E1006ECBFC /* SwiftUiBiometricUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUiBiometricUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD23FCF2A3710E1006ECBFC /* SwiftUiBiometricUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBiometricUITests.swift; sourceTree = "<group>"; };
+		3CD23FD12A3710E1006ECBFC /* SwiftUiBiometricUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiBiometricUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CD23FE12A371C3F006ECBFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3CD23FE52A371CF8006ECBFC /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		3CD23FE62A371CF8006ECBFC /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3CD23FE72A371CF8006ECBFC /* KeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		3CD23FEC2A371D0D006ECBFC /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		3CD23FEE2A371D24006ECBFC /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		3CD23FF12A371D40006ECBFC /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CD23FAE2A3710DB006ECBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD23FE02A371C02006ECBFC /* SwiftKeychainWrapper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FBE2A3710E1006ECBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FC82A3710E1006ECBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CD23FA82A3710DB006ECBFC = {
+			isa = PBXGroup;
+			children = (
+				3CD23FB32A3710DB006ECBFC /* SwiftUiBiometric */,
+				3CD23FC42A3710E1006ECBFC /* SwiftUiBiometricTests */,
+				3CD23FCE2A3710E1006ECBFC /* SwiftUiBiometricUITests */,
+				3CD23FB22A3710DB006ECBFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CD23FB22A3710DB006ECBFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FB12A3710DB006ECBFC /* SwiftUiBiometric.app */,
+				3CD23FC12A3710E1006ECBFC /* SwiftUiBiometricTests.xctest */,
+				3CD23FCB2A3710E1006ECBFC /* SwiftUiBiometricUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD23FB32A3710DB006ECBFC /* SwiftUiBiometric */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FB42A3710DB006ECBFC /* SwiftUiBiometricApp.swift */,
+				3CD23FE32A371CB5006ECBFC /* Views */,
+				3CD23FF02A371D2E006ECBFC /* ViewModel */,
+				3CD23FE42A371CF8006ECBFC /* Services */,
+				3CD23FEB2A371D0D006ECBFC /* Models */,
+				3CD23FB82A3710E1006ECBFC /* Assets.xcassets */,
+				3CD23FBA2A3710E1006ECBFC /* Preview Content */,
+			);
+			path = SwiftUiBiometric;
+			sourceTree = "<group>";
+		};
+		3CD23FBA2A3710E1006ECBFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FBB2A3710E1006ECBFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CD23FC42A3710E1006ECBFC /* SwiftUiBiometricTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FC52A3710E1006ECBFC /* SwiftUiBiometricTests.swift */,
+			);
+			path = SwiftUiBiometricTests;
+			sourceTree = "<group>";
+		};
+		3CD23FCE2A3710E1006ECBFC /* SwiftUiBiometricUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FCF2A3710E1006ECBFC /* SwiftUiBiometricUITests.swift */,
+				3CD23FD12A3710E1006ECBFC /* SwiftUiBiometricUITestsLaunchTests.swift */,
+			);
+			path = SwiftUiBiometricUITests;
+			sourceTree = "<group>";
+		};
+		3CD23FE32A371CB5006ECBFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FE12A371C3F006ECBFC /* LoginView.swift */,
+				3CD23FB62A3710DB006ECBFC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CD23FE42A371CF8006ECBFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FEE2A371D24006ECBFC /* Authentication.swift */,
+				3CD23FE52A371CF8006ECBFC /* UIApplication+Extension.swift */,
+				3CD23FE62A371CF8006ECBFC /* APIService.swift */,
+				3CD23FE72A371CF8006ECBFC /* KeychainStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3CD23FEB2A371D0D006ECBFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FEC2A371D0D006ECBFC /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CD23FF02A371D2E006ECBFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CD23FF12A371D40006ECBFC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CD23FB02A3710DB006ECBFC /* SwiftUiBiometric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD23FD52A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometric" */;
+			buildPhases = (
+				3CD23FAD2A3710DB006ECBFC /* Sources */,
+				3CD23FAE2A3710DB006ECBFC /* Frameworks */,
+				3CD23FAF2A3710DB006ECBFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUiBiometric;
+			packageProductDependencies = (
+				3CD23FDF2A371C02006ECBFC /* SwiftKeychainWrapper */,
+			);
+			productName = SwiftUiBiometric;
+			productReference = 3CD23FB12A3710DB006ECBFC /* SwiftUiBiometric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CD23FC02A3710E1006ECBFC /* SwiftUiBiometricTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD23FD82A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometricTests" */;
+			buildPhases = (
+				3CD23FBD2A3710E1006ECBFC /* Sources */,
+				3CD23FBE2A3710E1006ECBFC /* Frameworks */,
+				3CD23FBF2A3710E1006ECBFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD23FC32A3710E1006ECBFC /* PBXTargetDependency */,
+			);
+			name = SwiftUiBiometricTests;
+			productName = SwiftUiBiometricTests;
+			productReference = 3CD23FC12A3710E1006ECBFC /* SwiftUiBiometricTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CD23FCA2A3710E1006ECBFC /* SwiftUiBiometricUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD23FDB2A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometricUITests" */;
+			buildPhases = (
+				3CD23FC72A3710E1006ECBFC /* Sources */,
+				3CD23FC82A3710E1006ECBFC /* Frameworks */,
+				3CD23FC92A3710E1006ECBFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD23FCD2A3710E1006ECBFC /* PBXTargetDependency */,
+			);
+			name = SwiftUiBiometricUITests;
+			productName = SwiftUiBiometricUITests;
+			productReference = 3CD23FCB2A3710E1006ECBFC /* SwiftUiBiometricUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CD23FA92A3710DB006ECBFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3CD23FB02A3710DB006ECBFC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					3CD23FC02A3710E1006ECBFC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3CD23FB02A3710DB006ECBFC;
+					};
+					3CD23FCA2A3710E1006ECBFC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3CD23FB02A3710DB006ECBFC;
+					};
+				};
+			};
+			buildConfigurationList = 3CD23FAC2A3710DB006ECBFC /* Build configuration list for PBXProject "SwiftUiBiometric" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CD23FA82A3710DB006ECBFC;
+			packageReferences = (
+				3CD23FDE2A371C02006ECBFC /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
+			productRefGroup = 3CD23FB22A3710DB006ECBFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CD23FB02A3710DB006ECBFC /* SwiftUiBiometric */,
+				3CD23FC02A3710E1006ECBFC /* SwiftUiBiometricTests */,
+				3CD23FCA2A3710E1006ECBFC /* SwiftUiBiometricUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CD23FAF2A3710DB006ECBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD23FBC2A3710E1006ECBFC /* Preview Assets.xcassets in Resources */,
+				3CD23FB92A3710E1006ECBFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FBF2A3710E1006ECBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FC92A3710E1006ECBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD23FAD2A3710DB006ECBFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD23FE22A371C3F006ECBFC /* LoginView.swift in Sources */,
+				3CD23FE92A371CF8006ECBFC /* APIService.swift in Sources */,
+				3CD23FB72A3710DB006ECBFC /* ContentView.swift in Sources */,
+				3CD23FED2A371D0D006ECBFC /* Credentials.swift in Sources */,
+				3CD23FE82A371CF8006ECBFC /* UIApplication+Extension.swift in Sources */,
+				3CD23FB52A3710DB006ECBFC /* SwiftUiBiometricApp.swift in Sources */,
+				3CD23FEA2A371CF8006ECBFC /* KeychainStorage.swift in Sources */,
+				3CD23FEF2A371D24006ECBFC /* Authentication.swift in Sources */,
+				3CD23FF22A371D40006ECBFC /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FBD2A3710E1006ECBFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD23FC62A3710E1006ECBFC /* SwiftUiBiometricTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD23FC72A3710E1006ECBFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD23FD02A3710E1006ECBFC /* SwiftUiBiometricUITests.swift in Sources */,
+				3CD23FD22A3710E1006ECBFC /* SwiftUiBiometricUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CD23FC32A3710E1006ECBFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD23FB02A3710DB006ECBFC /* SwiftUiBiometric */;
+			targetProxy = 3CD23FC22A3710E1006ECBFC /* PBXContainerItemProxy */;
+		};
+		3CD23FCD2A3710E1006ECBFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD23FB02A3710DB006ECBFC /* SwiftUiBiometric */;
+			targetProxy = 3CD23FCC2A3710E1006ECBFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CD23FD32A3710E1006ECBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CD23FD42A3710E1006ECBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CD23FD62A3710E1006ECBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiBiometric/Preview Content\"";
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to access stored credentials";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CD23FD72A3710E1006ECBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiBiometric/Preview Content\"";
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to access stored credentials";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CD23FD92A3710E1006ECBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUiBiometric.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUiBiometric";
+			};
+			name = Debug;
+		};
+		3CD23FDA2A3710E1006ECBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUiBiometric.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUiBiometric";
+			};
+			name = Release;
+		};
+		3CD23FDC2A3710E1006ECBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometricUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUiBiometric;
+			};
+			name = Debug;
+		};
+		3CD23FDD2A3710E1006ECBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8677HC9HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cubix.com.SwiftUiBiometricUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUiBiometric;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CD23FAC2A3710DB006ECBFC /* Build configuration list for PBXProject "SwiftUiBiometric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD23FD32A3710E1006ECBFC /* Debug */,
+				3CD23FD42A3710E1006ECBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD23FD52A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD23FD62A3710E1006ECBFC /* Debug */,
+				3CD23FD72A3710E1006ECBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD23FD82A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometricTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD23FD92A3710E1006ECBFC /* Debug */,
+				3CD23FDA2A3710E1006ECBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD23FDB2A3710E1006ECBFC /* Build configuration list for PBXNativeTarget "SwiftUiBiometricUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD23FDC2A3710E1006ECBFC /* Debug */,
+				3CD23FDD2A3710E1006ECBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CD23FDE2A371C02006ECBFC /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CD23FDF2A371C02006ECBFC /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD23FDE2A371C02006ECBFC /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3CD23FA92A3710DB006ECBFC /* Project object */;
+}
